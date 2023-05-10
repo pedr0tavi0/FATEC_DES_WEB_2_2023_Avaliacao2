@@ -7,7 +7,7 @@ $rg = $_POST['rg'];
 $telefone = $_POST['telefone'];
 $escola= $_POST['escola'];
 
-if ($objeto1->inserir_candidato($nome ,$rg,$telefone, $escola)){
+if ($objeto1->inserir_aluno($nome ,$rg,$telefone, $escola)){
     print("Cadastrado com sucesso ! ...");
 };
 
