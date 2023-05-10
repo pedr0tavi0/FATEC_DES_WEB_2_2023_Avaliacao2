@@ -25,9 +25,7 @@
         <button type="submit" value="Enviar">Cadastrar</button>
         <input type="submit" value="Enviar"><br>
         <br>
-        <div class="form-group">
-            <a href="list.php" class="btn btn-danger">Listar candidatos</a><br>
-        </div>
+       
         <br>
         <div class="form-group">
             <a href="apagar.php" class="btn btn-danger">Apagar candidatos</a><br>
