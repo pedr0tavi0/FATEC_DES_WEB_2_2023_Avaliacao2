@@ -60,33 +60,6 @@ public function delete_aluno($delete){
     return True;
 }
 
-public function select_aluno($nome, $cpf, $telefone, $esc){
-    try {
-
-        $sql = "SELECT id, nome, rg, telefone, escola  FROM aluno";
-        $result = $conn->query($sql);
-
-        if ($result->num_rows > 0) {
-            echo "<table><tr><th>ID</th><th>Name</th><th>CPF</th><th>Telefone</th><th>Publica 1=SIM | 0=Não</th></tr>";
-            // output data of each row
-            while($row = $result->fetch_assoc()) {
-                echo "<tr><td>".$row["id"]."</td><td>".$row["nome"]."</td><td> ".$row["rg_cpf"]." </td><td>".$row["telefone"]."</td><td> ".$row["esc_publica"]."</td></tr>";
-            }
-            echo "</table>";
-        } else {
-            echo "0 results";
-        }
-        
-        $this->conn->exec($sql);
-    }catch(PDOException $e){
-        echo $sql . "<br>" . $e->getMessage();
-    }
-    return True;
-}
-
-
-
-
 
 public function __destruct() {
 
