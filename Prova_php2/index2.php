@@ -27,9 +27,7 @@
         <br>
        
         <br>
-        <div class="form-group">
-            <a href="apagar.php" class="btn btn-danger">Apagar candidatos</a><br>
-        </div>
+      
     </form>
     </form>
 </body>
