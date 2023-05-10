@@ -30,7 +30,7 @@ $this->conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this
 }
 
 
- public function inserir_candidato($nome, $rg, $telefone, $escola){
+ public function inserir_aluno($nome, $rg, $telefone, $escola){
 
  try {
  $sql = "INSERT INTO aluno (nome, rg, telefone, escola )
